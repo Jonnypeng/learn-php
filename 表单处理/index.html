@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<!--<form action="welcome.php" method="post">
+	<input value="请输入姓名"  type="text" name="name">
+	<input value="请输入邮箱"  type="text" name="email">
+	<input type="submit">
+</form>-->
+	<form action="welcome.php" method="get">
+	<input value="请输入姓名"  type="text" name="name">
+	<input value="请输入邮箱"  type="text" name="email">
+	<input type="submit">
+</form>
+	<script>
+		var input = document.getElementsByTagName("input");
+		for (var i=0;i<2;i++){
+			input[i].onfocus = function (){
+				this.value = "";	
+			};
+		};
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		span{
+			padding-right:10px;
+		}
+		textarea{
+			vertical-align:top;
+		}
+		form div{
+			margin:10px auto;
+		}
+		button{
+			padding:5px 10px;
+			border-radius:0.25rem;
+			font-size:1rem;
+			background:red;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="must.php">
+		<div><span>姓名:</span><input type="text" value="" name="name"><br></div>
+		<div><span>邮件:</span><input type="text" value="" name="email"><br></div>
+		<div><span>网址:</span><input type="text" value="" name="website"><br></div>
+		<div><span>评论:</span><textarea id="" name="commit" cols="30" rows="10"></textarea>	<br>	</div>
+		<div>
+			<span>性别:</span>男性<input type="radio" value="男性" name="sex">女性<input type="radio" name="sex" value="女性">
+		</div>
+		<button type="sumbit" value="提交">提交</button>
+	</form>		
+</body>
+</html>
